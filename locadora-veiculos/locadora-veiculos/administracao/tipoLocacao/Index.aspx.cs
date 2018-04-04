@@ -13,5 +13,25 @@ namespace locadora_veiculos.administracao.tipoLocacao
         {
 
         }
+
+        protected void btnMenu_Click(object sender, EventArgs e)
+        {
+            string opcao = ddlMenu.SelectedValue;
+
+            switch (opcao)
+            {
+                case "0":
+                    lblMensagem.Text = "Selecione uma opção válida!";
+                    break;
+
+                case "1":
+                    Response.Redirect("~/administracao/tipoLocacao/Cadastro.aspx");
+                    break;
+
+                case "2":
+                    Response.Redirect("/");
+                    break;
+            }
+        }
     }
 }

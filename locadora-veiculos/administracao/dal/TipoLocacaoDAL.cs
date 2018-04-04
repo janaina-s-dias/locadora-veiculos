@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using administracao.model;
+using administracao.Common.model;
 using System.Data.SqlClient;
 
-namespace administracao.dal
+namespace administracao.Common.dal
 {
     public class TipoLocacaoDAL : Conexao
     {

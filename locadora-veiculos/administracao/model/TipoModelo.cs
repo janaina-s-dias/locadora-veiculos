@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace locacao.model
+namespace locacao.Common.model
 {
     public class TipoModelo
     {

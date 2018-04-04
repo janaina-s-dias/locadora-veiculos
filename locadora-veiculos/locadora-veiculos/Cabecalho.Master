@@ -20,7 +20,7 @@
                         <%--<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">--%>
                                 <ul class="nav navbar-nav">
                                 <li class="active">
-                                    <a href="Home.aspx">Página Inicial</a>
+                                  <a href="Home.aspx">Página Inicial</a> 
                                 </li>
                                 <li class="active">
                                     <a href="administracao/tipoLocacao/Index.aspx">Tipo Locação</a>

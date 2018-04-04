@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using administracao.Common.model;
+using administracao.Common.dal;
 
 
 namespace locadora_veiculos.administracao
@@ -17,12 +19,21 @@ namespace locadora_veiculos.administracao
         {
             try
             {
-                
+                TipoLocacao tl = new TipoLocacao();
+                tl.nmTipoLocacao = txtNomeTipoLocacao.Text;
+
+                TipoLocacaoDAL tld = new TipoLocacaoDAL();
+
+                tld.Gravar(tl);
+
+                lblMensagem.Text = "Gravado com sucesso!";
+
+                txtNomeTipoLocacao.Text = String.Empty;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                
-                throw;
+
+                lblMensagem.Text = ex.Message;
             }
 
         }

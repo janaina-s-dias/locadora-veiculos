@@ -13,25 +13,5 @@ namespace locadora_veiculos
         {
 
         }
-
-        protected void btnAcessar(object sender, EventArgs e)
-        {
-            string opcao = ddlMenu.SelectedValue;
-
-            switch(opcao)
-            {
-                case "0":
-                    lblMensagem.Text = "Selecione uma opção válida!";
-                    break;
-
-                case "1":
-                    Response.Redirect("/");
-                    break;
-
-                case "2":
-                    Response.Redirect("/");
-                    break;
-            }
-        }
     }
 }

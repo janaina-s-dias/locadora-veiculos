@@ -1,27 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cadastro.aspx.cs" Inherits="locadora_veiculos.administracao.Cadastro" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+﻿<%@ Page Language="C#"  MasterPageFile="~/Cabecalho.Master" AutoEventWireup="true" CodeBehind="Cadastro.aspx.cs" Inherits="locadora_veiculos.administracao.Cadastro" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server"> 
     <title>Cadastro</title>
-     <link type="text/css" rel="stylesheet" href="../src/js/bootstrap.min.js" />
-</head>
-    <script src="../../scripts/js/jquery.min.js"> </script>
-    <script src="../../scripts/js/bootstrap.min.js"> </script>
-<body>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphConteudo" runat="server">
+      
     <form id="form1" runat="server">
     <div class="container">
         <div class="span10 offset1">
                 <div class="row">
                     <h3 class="well"> Cadastro Tipo Locação</h3>
                     <br />
-                    Tipo Locação: <br />
+                    Nome: <br />
                     <asp:TextBox ID="txtNomeTipoLocacao" runat="server" Width="45%" CssClass="form-control" /> 
-                    <asp:RequiredFieldValidator ID="requiredNomeTpLocacao" runat="server" ControlToValidate="txtNomeTipoLocacao" ErrorMessage="Campo Obrigatório" ForeColor="Red" />
-
-                    Ativo: <br /> <!-- Corrigir depois -->
-                    <asp:TextBox ID="TextBox1" runat="server" Width="45%" CssClass="form-control" /> 
+                    <%--<asp:RequiredFieldValidator ID="requiredNomeTpLocacao" runat="server" ControlToValidate="txtNomeTipoLocacao" ErrorMessage="Campo Obrigatório" ForeColor="Red" />--%>
+                     
+             
+                  <%--  Ativo: <br /> <!-- Corrigir depois -->
+                    <asp:TextBox ID="TextBox1" runat="server" Width="45%" CssClass="form-control" /> --%>
                    
                     <br />
 
@@ -35,5 +30,4 @@
             </div>
         </div>
     </form>
-</body>
-</html>
+   </asp:Content>

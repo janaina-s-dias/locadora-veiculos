@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace administracao.bll
+namespace administracao.Common.bll
 {
     public class TipoLocacaoBLL
     {
