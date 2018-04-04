@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "locadora-veiculos", "locadora-veiculos\locadora-veiculos.csproj", "{13E02B82-5246-4349-A643-0BD418A3A992}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "locacao", "locacao\locacao.csproj", "{7A5D1096-0923-4E00-B8A3-B75333893AC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "administracao", "administracao\administracao.csproj", "{67222727-E7F0-4769-8B99-85B8A03C8380}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{13E02B82-5246-4349-A643-0BD418A3A992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13E02B82-5246-4349-A643-0BD418A3A992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13E02B82-5246-4349-A643-0BD418A3A992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A5D1096-0923-4E00-B8A3-B75333893AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5D1096-0923-4E00-B8A3-B75333893AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A5D1096-0923-4E00-B8A3-B75333893AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A5D1096-0923-4E00-B8A3-B75333893AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67222727-E7F0-4769-8B99-85B8A03C8380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67222727-E7F0-4769-8B99-85B8A03C8380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67222727-E7F0-4769-8B99-85B8A03C8380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67222727-E7F0-4769-8B99-85B8A03C8380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,7 @@
+C:\Users\janainad\Documents\Visual Studio 2013\Projects\locadora-veiculos\locacao\bin\Debug\locacao.dll
+C:\Users\janainad\Documents\Visual Studio 2013\Projects\locadora-veiculos\locacao\bin\Debug\locacao.pdb
+C:\Users\janainad\Documents\Visual Studio 2013\Projects\locadora-veiculos\locacao\obj\Debug\locacao.csprojResolveAssemblyReference.cache
+C:\Users\janainad\Documents\Visual Studio 2013\Projects\locadora-veiculos\locacao\obj\Debug\locacao.dll
+C:\Users\janainad\Documents\Visual Studio 2013\Projects\locadora-veiculos\locacao\obj\Debug\locacao.pdb
+C:\Users\janainad\Documents\Visual Studio 2013\Projects\locadora-veiculos\locacao\bin\Debug\administracao.dll
+C:\Users\janainad\Documents\Visual Studio 2013\Projects\locadora-veiculos\locacao\bin\Debug\administracao.pdb

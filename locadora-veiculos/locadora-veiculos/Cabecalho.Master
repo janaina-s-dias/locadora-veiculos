@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cabecalho.master.cs" Inherits="locadora_veiculos.Cabecalho" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+       <script src="scripts/js/jquery.min.js"></script>
+       <script src="scripts/js/bootstrap.min.js"></script>
+       <script src="scripts/js/scripts.js"></script>
+       <link href="scripts/css/bootstrap.min.css" rel='stylesheet'/>
+      <link rel="shortcut icon" href="img/car_23773.png" />
+    <asp:ContentPlaceHolder ID="cphHead" runat="server"> </asp:ContentPlaceHolder>
+</head>
+<body>
+ 
+    <div id="Conteudo">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="nav  nav-pills" role="navigation">   
+                        <%--<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">--%>
+                                <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="Home.aspx">Página Inicial</a>
+                                </li>
+                                <li class="active">
+                                    <a href="administracao/tipoLocacao/Index.aspx">Tipo Locação</a>
+                                </li>
+                            </ul>
+                       <%-- </div>--%>
+                    </nav>
+                </div>
+                </div>
+    </div>
+    <asp:ContentPlaceHolder ID="cphConteudo" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>

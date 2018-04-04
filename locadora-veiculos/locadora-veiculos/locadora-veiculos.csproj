@@ -57,23 +57,55 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="home.html" />
-    <Content Include="src\css\bootstrap-theme.min.css" />
-    <Content Include="src\css\bootstrap.min.css" />
-    <Content Include="src\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="src\js\bootstrap.min.js" />
-    <Content Include="src\js\jquery.min.js" />
-    <Content Include="src\js\scripts.js" />
+    <Content Include="administracao\tipoLocacao\Cadastro.aspx" />
+    <Content Include="administracao\tipoLocacao\Index.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="img\car_23773.png" />
+    <Content Include="scripts\css\bootstrap-theme.min.css" />
+    <Content Include="scripts\css\bootstrap.min.css" />
+    <Content Include="scripts\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="scripts\js\bootstrap.min.js" />
+    <Content Include="scripts\js\jquery.min.js" />
+    <Content Include="scripts\js\scripts.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="administracao\tipoLocacao\Cadastro.aspx.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administracao\tipoLocacao\Cadastro.aspx.designer.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administracao\tipoLocacao\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administracao\tipoLocacao\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cabecalho.Master.cs">
+      <DependentUpon>Cabecalho.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cabecalho.Master.designer.cs">
+      <DependentUpon>Cabecalho.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="src\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="src\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="src\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="src\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="scripts\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="scripts\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="scripts\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Cabecalho.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -81,7 +113,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\administracao\administracao.csproj">
+      <Project>{67222727-e7f0-4769-8b99-85b8a03c8380}</Project>
+      <Name>administracao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\locacao\locacao.csproj">
+      <Project>{7a5d1096-0923-4e00-b8a3-b75333893ac6}</Project>
+      <Name>locacao</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
