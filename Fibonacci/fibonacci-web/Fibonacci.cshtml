@@ -1,0 +1,84 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="scripts/js/jquery.min.js"></script>
+    <script src="scripts/js/bootstrap.min.js"></script>
+    <script src="scripts/js/scripts.js"></script>
+    <link href="scripts/css/bootstrap.min.css" rel='stylesheet' />
+    <title>Fibonacci</title>
+
+    <style>
+        table td tr {text-align:"center";}
+    </style>
+</head>
+<body>
+     <h3>Sequência de Fibonacci</h3>
+     <form action="" method="post">
+         
+         <label for="txtQtd">Insira a quantidade: </label>
+         <input type="number" name="txtQtd" />
+         <button type="submit" class="btn btn-danger btn-group-sm">Simular</button>
+            
+     </form>
+    <div>
+        @{
+           var a = 1;
+           var b = 1;
+           var c = 0;
+           var qtdString = (Request["txtQtd"]);
+           var qtdInt = 0;
+
+           if (qtdString.IsInt() == true) { qtdInt = qtdString.AsInt(); }
+        }
+        <br/>
+            <table border="1">
+                <tr>
+                    <th align="center">
+                        <p>Quantidade</p>
+                    </th>
+                    <th>
+                        <p>Fibonacci</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1º</p>
+                    </td>
+                    <td>
+                        <p>@a</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>2º</p>
+                    </td>
+                    <td>
+                        <p>@b</p>
+                    </td>
+                </tr>
+                @for (var i = 3; i <= qtdInt; i++)
+                {
+
+                    c = a + b;
+                    a = b;
+                    b = c;
+
+                    <tr>
+                        <td>
+                            <p>@i º</p>
+                        </td>
+                        <td>
+                            <p>@c</p>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+</body>
+</html>
