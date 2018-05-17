@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     //Layout = null;
 }
 
@@ -26,20 +27,34 @@
     <title>Página Inicial</title>
 </head>
 <body>
-    
+    <br/> <br/><br /> <br />
+    <center>
+
         @{
             if (Request["entrar"] != null)
             {
+                 
                 string nome = (Request["nome"]);
                 string senha = (Request["senha"]);
-                <p>Seja bem-vindo @nome</p>
+
+                <h3>Seja bem-vindx @nome.ToUpper()</h3>
             }
             else
             {
                 <p>Caiu no else</p>
             }
         }
-   
+    </center>
+    <fieldset>
+        <h3>Resultados</h3>
+        <table>
+            <tr>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+    </fieldset>
         <div>
           
         </div>
